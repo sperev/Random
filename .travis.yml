@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+- docker
+
+notifications:
+  slack:
+    rooms:
+      secure: N3vIU+EOSlJ1hh/lpK/IuD9lQU2RDBNRy7x5JtKCy03rrisudvnvc3ZnYA+irfb3ouf3NniSnaHGxWcKgQysoBmkjkuXhv3xqkZ/9HwJ2uYGGMHeycn04o+q6qRNNH1qFGQySlG5A0wmRmdQG3QQokL8eyuF9cU0W68l71elby2QsyRxWwygNRSBydocQ03NNqO8LT8KyIFjbbWjD1+FJFJE7gOrQZRatTrQZCzwi4aGcWoQ/+Lqg811H/mttG2jHn8E7H9TS8BNogxK8LdpjLejBHfOPT0sWFQgLaFWYz0E1aUs1ySb+MSF/+SHZnmRnzIUz2LovkDjYTAB8J7s4qkXk52qM/2XReEDvu/MVP1gp6ZetQxagrjATBYf1QeyOyLQNpihM+9ioWg+jGeZFMz+5e8IjeukRYiq2+ezKjqshI0HKrP0eS2gz1KFQjlSRE8Icg8zC+/v0ULxCMzsaKAHaRP7uZbsBVz2vT4kA4BqPFG/YUxubJIwOAlIREU5uwY7VF5jYuRYlMgRwKPeZyAuxNEt6jN+Mu7HwUDyNm1wajWGlLPkg30cr0t7ObGZ/NPLh++68d9yU968yekuSMIXZ8vhSVOlhqVs3yH30USa0oHV60AAfFQ2/tgoxuR5W6JRWXO5KrlGT3/oJFCIrMRFUdCjIuwqm4FCxhXTADI=
+
+script:
+- "./tests.sh"
+- "./check.sh"
